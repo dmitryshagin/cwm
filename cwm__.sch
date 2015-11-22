@@ -14337,11 +14337,14 @@ W = angled&lt;p&gt;
 <class number="1" name="VIN" width="0.254" drill="0.4">
 <clearance class="1" value="0.2"/>
 </class>
-<class number="2" name="GND" width="0.254" drill="0.4">
+<class number="2" name="GND" width="0.3" drill="0.4">
 <clearance class="2" value="0.2"/>
 </class>
 <class number="3" name="VCC" width="0.254" drill="0.4">
 <clearance class="3" value="0.2"/>
+</class>
+<class number="4" name="VDD" width="0.254" drill="0.4">
+<clearance class="4" value="0.2"/>
 </class>
 </classes>
 <parts>
@@ -14512,7 +14515,6 @@ W = angled&lt;p&gt;
 <part name="SUPPLY46" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="C19" library="resistor" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="SUPPLY47" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="C20" library="resistor" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY48" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -14539,6 +14541,7 @@ W = angled&lt;p&gt;
 <part name="SUPPLY41" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R37" library="resistor" deviceset="R-EU_" device="R0402" value="340k-1%"/>
 <part name="R38" library="resistor" deviceset="R-EU_" device="R0402" value="340k-1%"/>
+<part name="VDD3" library="supply1" deviceset="VDD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14713,7 +14716,6 @@ W = angled&lt;p&gt;
 <instance part="SUPPLY46" gate="G$1" x="-294.64" y="154.94"/>
 <instance part="C19" gate="G$1" x="-294.64" y="149.86" rot="R180"/>
 <instance part="GND48" gate="1" x="-294.64" y="144.78"/>
-<instance part="SUPPLY47" gate="G$1" x="-320.04" y="175.26"/>
 <instance part="C20" gate="G$1" x="-320.04" y="170.18" rot="R180"/>
 <instance part="GND49" gate="1" x="-320.04" y="165.1"/>
 <instance part="SUPPLY48" gate="G$1" x="-320.04" y="154.94"/>
@@ -14740,6 +14742,7 @@ W = angled&lt;p&gt;
 <instance part="SUPPLY41" gate="G$1" x="7.62" y="134.62"/>
 <instance part="R37" gate="G$1" x="-226.06" y="55.88" rot="MR180"/>
 <instance part="R38" gate="G$1" x="-215.9" y="55.88" rot="MR180"/>
+<instance part="VDD3" gate="G$1" x="-320.04" y="177.8"/>
 </instances>
 <busses>
 <bus name="B[0..15]">
@@ -15319,10 +15322,6 @@ W = angled&lt;p&gt;
 <pinref part="C19" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="SUPPLY47" gate="G$1" pin="VCC"/>
-<pinref part="C20" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="SUPPLY48" gate="G$1" pin="VCC"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 </segment>
@@ -15542,6 +15541,10 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
 <pinref part="R36" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="2"/>
+<pinref part="VDD3" gate="G$1" pin="VDD"/>
 </segment>
 </net>
 <net name="AGND" class="0">

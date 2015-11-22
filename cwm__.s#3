@@ -14410,7 +14410,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="-254" y="60.96" size="1.778" layer="91">посчитать правильные значения для резистивного делителя (чтобы максимальное напряжение было вольт 6)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-137.16" y="33.02"/>
