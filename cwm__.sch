@@ -262,30 +262,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="1.55" y1="-1.35" x2="1.9" y2="-1.15" layer="51" rot="R180"/>
 <rectangle x1="1.55" y1="0.65" x2="1.9" y2="0.85" layer="51" rot="R180"/>
 <rectangle x1="1.55" y1="1.15" x2="1.9" y2="1.35" layer="51" rot="R180"/>
-<smd name="24" x="-1.25" y="1.875" dx="0.29" dy="0.7" layer="1"/>
+<smd name="24" x="-1.25" y="1.875" dx="0.29" dy="0.635" layer="1"/>
 <smd name="23" x="-0.75" y="1.875" dx="0.29" dy="0.7" layer="1"/>
 <smd name="22" x="-0.25" y="1.875" dx="0.29" dy="0.7" layer="1"/>
 <smd name="21" x="0.25" y="1.875" dx="0.29" dy="0.7" layer="1"/>
 <smd name="20" x="0.75" y="1.875" dx="0.29" dy="0.7" layer="1"/>
-<smd name="19" x="1.25" y="1.875" dx="0.29" dy="0.7" layer="1"/>
-<smd name="18" x="1.875" y="1.25" dx="0.29" dy="0.7" layer="1" rot="R270"/>
+<smd name="19" x="1.25" y="1.875" dx="0.29" dy="0.635" layer="1"/>
+<smd name="18" x="1.875" y="1.25" dx="0.29" dy="0.635" layer="1" rot="R270"/>
 <smd name="17" x="1.875" y="0.75" dx="0.29" dy="0.7" layer="1" rot="R270"/>
 <smd name="16" x="1.875" y="0.25" dx="0.29" dy="0.7" layer="1" rot="R270"/>
 <smd name="15" x="1.875" y="-0.25" dx="0.29" dy="0.7" layer="1" rot="R270"/>
 <smd name="14" x="1.875" y="-0.75" dx="0.29" dy="0.7" layer="1" rot="R270"/>
-<smd name="13" x="1.875" y="-1.25" dx="0.29" dy="0.7" layer="1" rot="R270"/>
-<smd name="12" x="1.25" y="-1.875" dx="0.29" dy="0.7" layer="1" rot="R180"/>
+<smd name="13" x="1.875" y="-1.25" dx="0.29" dy="0.635" layer="1" rot="R270"/>
+<smd name="12" x="1.25" y="-1.875" dx="0.29" dy="0.635" layer="1" rot="R180"/>
 <smd name="11" x="0.75" y="-1.875" dx="0.29" dy="0.7" layer="1" rot="R180"/>
 <smd name="10" x="0.25" y="-1.875" dx="0.29" dy="0.7" layer="1" rot="R180"/>
 <smd name="9" x="-0.25" y="-1.875" dx="0.29" dy="0.7" layer="1" rot="R180"/>
 <smd name="8" x="-0.75" y="-1.875" dx="0.29" dy="0.7" layer="1" rot="R180"/>
-<smd name="7" x="-1.25" y="-1.875" dx="0.29" dy="0.7" layer="1" rot="R180"/>
-<smd name="6" x="-1.875" y="-1.25" dx="0.29" dy="0.7" layer="1" rot="R90"/>
+<smd name="7" x="-1.25" y="-1.875" dx="0.29" dy="0.635" layer="1" rot="R180"/>
+<smd name="6" x="-1.875" y="-1.25" dx="0.29" dy="0.635" layer="1" rot="R90"/>
 <smd name="5" x="-1.875" y="-0.75" dx="0.29" dy="0.7" layer="1" rot="R90"/>
 <smd name="4" x="-1.875" y="-0.25" dx="0.29" dy="0.7" layer="1" rot="R90"/>
 <smd name="3" x="-1.875" y="0.25" dx="0.29" dy="0.7" layer="1" rot="R90"/>
 <smd name="2" x="-1.875" y="0.75" dx="0.29" dy="0.7" layer="1" rot="R90"/>
-<smd name="1" x="-1.875" y="1.25" dx="0.29" dy="0.7" layer="1" rot="R90"/>
+<smd name="1" x="-1.875" y="1.25" dx="0.29" dy="0.635" layer="1" rot="R90"/>
 <wire x1="-2" y1="1.6" x2="-1.6" y2="2" width="0.127" layer="21"/>
 <wire x1="2" y1="2" x2="1.6" y2="2" width="0.127" layer="21"/>
 <wire x1="2" y1="2" x2="2" y2="1.6" width="0.127" layer="21"/>
@@ -1149,9 +1149,9 @@ package type OT</description>
 <vertex x="-0.5" y="-0.05"/>
 <vertex x="-0.5" y="0" curve="-90"/>
 <vertex x="0" y="0.5"/>
-<vertex x="0" y="1.85"/>
-<vertex x="1.25" y="1.85"/>
-<vertex x="1.35" y="1.75"/>
+<vertex x="0" y="1.775"/>
+<vertex x="1.25" y="1.775"/>
+<vertex x="1.35" y="1.675"/>
 <vertex x="1.35" y="0"/>
 <vertex x="0.5" y="0" curve="-90"/>
 <vertex x="0" y="-0.5"/>
@@ -1162,14 +1162,14 @@ package type OT</description>
 <vertex x="11.5" y="-0.5" curve="-90"/>
 <vertex x="11" y="0"/>
 <vertex x="10.15" y="0"/>
-<vertex x="10.15" y="1.75"/>
-<vertex x="10.25" y="1.85"/>
-<vertex x="11.5" y="1.85"/>
+<vertex x="10.15" y="1.675"/>
+<vertex x="10.25" y="1.775"/>
+<vertex x="11.5" y="1.775"/>
 <vertex x="11.5" y="0.5" curve="-90"/>
 </polygon>
 <wire x1="0" y1="14.55" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="14.55" x2="11.45" y2="14.55" width="0.127" layer="21"/>
-<polygon width="0.127" layer="39">
+<polygon width="0.127" layer="41">
 <vertex x="1.85" y="14.55"/>
 <vertex x="4.05" y="14.55"/>
 <vertex x="4.05" y="12.7"/>
@@ -1177,6 +1177,20 @@ package type OT</description>
 </polygon>
 <smd name="SHIELD1" x="0.8" y="12.7" dx="1.6" dy="1" layer="1" roundness="100" rot="R90"/>
 <smd name="SHIELD2" x="10.7" y="12.7" dx="1.6" dy="1" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.127" layer="41">
+<vertex x="0" y="1.8"/>
+<vertex x="1.325" y="1.8"/>
+<vertex x="1.325" y="0"/>
+<vertex x="0.65" y="0" curve="90"/>
+<vertex x="0" y="0.65"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="10.15" y="1.775"/>
+<vertex x="11.5" y="1.775"/>
+<vertex x="11.5" y="0.65" curve="90"/>
+<vertex x="10.85" y="0"/>
+<vertex x="10.15" y="0"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -14337,7 +14351,7 @@ W = angled&lt;p&gt;
 <class number="1" name="VIN" width="0.254" drill="0.4">
 <clearance class="1" value="0.2"/>
 </class>
-<class number="2" name="GND" width="0.3" drill="0.4">
+<class number="2" name="GND" width="0.254" drill="0.4">
 <clearance class="2" value="0.2"/>
 </class>
 <class number="3" name="VCC" width="0.254" drill="0.4">
@@ -14373,7 +14387,7 @@ W = angled&lt;p&gt;
 <part name="U$2" library="vishay_opto" deviceset="VSML3710" device=""/>
 <part name="PT1" library="vishay_opto" deviceset="VEMT3700F" device=""/>
 <part name="S2" library="switch-reed" deviceset="REED-SWITCH-" device="MK15-C2"/>
-<part name="T4" library="zetex" deviceset="NMOSSOT23" device=""/>
+<part name="T4" library="zetex" deviceset="NMOSSOT23" device="" value="BSR202N L6327"/>
 <part name="T5" library="zetex" deviceset="NMOSSOT23" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
@@ -14481,7 +14495,7 @@ W = angled&lt;p&gt;
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY37" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0402" value="33R"/>
-<part name="C13" library="resistor" deviceset="C-EU" device="C0603" value="10nF"/>
+<part name="C13" library="resistor" deviceset="C-EU" device="C0402" value="10nF"/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>
 <part name="R13" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>

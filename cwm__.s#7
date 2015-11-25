@@ -14365,8 +14365,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND40" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND41" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY39" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="R0402" value="60k"/>
-<part name="R15" library="resistor" deviceset="R-EU_" device="R0402" value="60k"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="R0402" value="470k"/>
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0402" value="470k"/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY40" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
 <part name="C14" library="resistor" deviceset="C-EU" device="C0603" value="1uF"/>
@@ -14394,12 +14394,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C21" library="resistor" deviceset="C-EU" device="C0402" value="100nF"/>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C22" library="resistor" deviceset="CPOL-US" device="A/3216-18R" value="10uF"/>
+<part name="R16" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="R17" library="resistor" deviceset="R-EU_" device="R0402" value="100k"/>
+<part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY49" library="SparkFun-Aesthetics" deviceset="VIN" device=""/>
+<part name="C10" library="resistor" deviceset="C-EU" device="C0402" value="100nF"/>
+<part name="GND52" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="AGND2" library="supply1" deviceset="AGND" device=""/>
+<part name="GND53" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R18" library="resistor" deviceset="R-EU_" device="R0402" value="0R"/>
+<part name="SUPPLY50" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="VDD2" library="supply1" deviceset="VDD" device=""/>
+<part name="R36" library="resistor" deviceset="R-EU_" device="R0402" value="0R"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-99.06" y="177.8" size="1.778" layer="91">уточнить корпуса для  10uF - просили алюминиевый по ДШ!</text>
-<text x="-254" y="60.96" size="1.778" layer="91">посчитать правильные значения для резистивного делителя (чтобы максимальное напряжение было вольт 6)</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-137.16" y="33.02"/>
@@ -14580,6 +14590,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C21" gate="G$1" x="-320.04" y="149.86" rot="R180"/>
 <instance part="GND50" gate="1" x="-320.04" y="144.78"/>
 <instance part="C22" gate="G$1" x="-81.28" y="167.64"/>
+<instance part="R16" gate="G$1" x="-96.52" y="68.58" rot="R90"/>
+<instance part="R17" gate="G$1" x="-180.34" y="58.42" rot="R180"/>
+<instance part="GND51" gate="1" x="-187.96" y="58.42" rot="R270"/>
+<instance part="SUPPLY49" gate="G$1" x="-96.52" y="73.66" rot="MR0"/>
+<instance part="C10" gate="G$1" x="-226.06" y="48.26" rot="R90"/>
+<instance part="GND52" gate="1" x="-231.14" y="48.26" rot="R270"/>
+<instance part="AGND2" gate="VR1" x="-287.02" y="81.28" rot="R270"/>
+<instance part="GND53" gate="1" x="-271.78" y="81.28" rot="R90"/>
+<instance part="R18" gate="G$1" x="-279.4" y="81.28" rot="MR180"/>
+<instance part="SUPPLY50" gate="G$1" x="-284.48" y="88.9" rot="R90"/>
+<instance part="VDD2" gate="G$1" x="-271.78" y="88.9" rot="R270"/>
+<instance part="R36" gate="G$1" x="-279.4" y="88.9" rot="MR180"/>
 </instances>
 <busses>
 <bus name="B[0..15]">
@@ -14856,6 +14878,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="C22" gate="G$1" pin="-"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="GND52" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="GND53" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$28" class="0">
 <segment>
@@ -14942,6 +14976,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="SUPPLY41" gate="G$1" pin="VIN"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="SUPPLY49" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="N$1" class="1">
@@ -15162,6 +15200,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="SUPPLY24" gate="G$1" pin="VCC"/>
 <pinref part="C22" gate="G$1" pin="+"/>
 </segment>
+<segment>
+<pinref part="SUPPLY50" gate="G$1" pin="VCC"/>
+<pinref part="R36" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="B0" class="0">
 <segment>
@@ -15344,11 +15386,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U1" gate="G$1" pin="VDDA"/>
 <pinref part="VDD1" gate="G$1" pin="VDD"/>
 </segment>
+<segment>
+<pinref part="VDD2" gate="G$1" pin="VDD"/>
+<pinref part="R36" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="AGND" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="VSSA"/>
 <pinref part="AGND1" gate="VR1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="AGND2" gate="VR1" pin="AGND"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15911,6 +15961,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-165.1" y1="48.26" x2="-220.98" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="48.26" x2="-220.98" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-220.98" y="55.88"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<junction x="-220.98" y="48.26"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -15938,9 +15990,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U6" gate="G$1" pin="WAKE_HW"/>
 </segment>
 </net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="NRST"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="-165.1" y1="58.42" x2="-175.26" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="BOOT0"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-106.68" y1="63.5" x2="-96.52" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-27.94,93.98,U6,GND1,GND,,,"/>
+<approved hash="104,1,-7.62,60.96,U6,GND2,GND,,,"/>
+<approved hash="104,1,10.16,60.96,U6,GND3,GND,,,"/>
+<approved hash="104,1,27.94,91.44,U6,VDD,VCC,,,"/>
+<approved hash="104,1,-142.24,139.7,U7,VDD,VCC,,,"/>
+<approved hash="104,1,-264.16,-5.08,U8G1,V+,VCC,,,"/>
+<approved hash="104,1,-264.16,-20.32,U8G1,V-,N$32,,,"/>
+<approved hash="104,1,-203.2,73.66,U9,VDD,VCC,,,"/>
+<approved hash="104,1,-228.6,73.66,U9,GND1,GND,,,"/>
+<approved hash="113,1,-165.1,-100.707,T4,,,,,"/>
+<approved hash="113,1,-282.833,43.18,T5,,,,,"/>
+<approved hash="113,1,-265.807,-25.4,T6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
