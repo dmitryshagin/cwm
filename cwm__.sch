@@ -1177,20 +1177,6 @@ package type OT</description>
 </polygon>
 <smd name="SHIELD1" x="0.8" y="12.7" dx="1.6" dy="1" layer="1" roundness="100" rot="R90"/>
 <smd name="SHIELD2" x="10.7" y="12.7" dx="1.6" dy="1" layer="1" roundness="100" rot="R90"/>
-<polygon width="0.127" layer="41">
-<vertex x="0" y="1.8"/>
-<vertex x="1.325" y="1.8"/>
-<vertex x="1.325" y="0"/>
-<vertex x="0.65" y="0" curve="90"/>
-<vertex x="0" y="0.65"/>
-</polygon>
-<polygon width="0.127" layer="41">
-<vertex x="10.15" y="1.775"/>
-<vertex x="11.5" y="1.775"/>
-<vertex x="11.5" y="0.65" curve="90"/>
-<vertex x="10.85" y="0"/>
-<vertex x="10.15" y="0"/>
-</polygon>
 </package>
 </packages>
 <symbols>

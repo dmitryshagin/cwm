@@ -1149,9 +1149,9 @@ package type OT</description>
 <vertex x="-0.5" y="-0.05"/>
 <vertex x="-0.5" y="0" curve="-90"/>
 <vertex x="0" y="0.5"/>
-<vertex x="0" y="1.85"/>
-<vertex x="1.25" y="1.85"/>
-<vertex x="1.35" y="1.75"/>
+<vertex x="0" y="1.775"/>
+<vertex x="1.25" y="1.775"/>
+<vertex x="1.35" y="1.675"/>
 <vertex x="1.35" y="0"/>
 <vertex x="0.5" y="0" curve="-90"/>
 <vertex x="0" y="-0.5"/>
@@ -1162,14 +1162,14 @@ package type OT</description>
 <vertex x="11.5" y="-0.5" curve="-90"/>
 <vertex x="11" y="0"/>
 <vertex x="10.15" y="0"/>
-<vertex x="10.15" y="1.75"/>
-<vertex x="10.25" y="1.85"/>
-<vertex x="11.5" y="1.85"/>
+<vertex x="10.15" y="1.675"/>
+<vertex x="10.25" y="1.775"/>
+<vertex x="11.5" y="1.775"/>
 <vertex x="11.5" y="0.5" curve="-90"/>
 </polygon>
 <wire x1="0" y1="14.55" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="0" y1="14.55" x2="11.45" y2="14.55" width="0.127" layer="21"/>
-<polygon width="0.127" layer="39">
+<polygon width="0.127" layer="41">
 <vertex x="1.85" y="14.55"/>
 <vertex x="4.05" y="14.55"/>
 <vertex x="4.05" y="12.7"/>
@@ -1177,6 +1177,20 @@ package type OT</description>
 </polygon>
 <smd name="SHIELD1" x="0.8" y="12.7" dx="1.6" dy="1" layer="1" roundness="100" rot="R90"/>
 <smd name="SHIELD2" x="10.7" y="12.7" dx="1.6" dy="1" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.127" layer="41">
+<vertex x="0" y="1.8"/>
+<vertex x="1.325" y="1.8"/>
+<vertex x="1.325" y="0"/>
+<vertex x="0.65" y="0" curve="90"/>
+<vertex x="0" y="0.65"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="10.15" y="1.775"/>
+<vertex x="11.5" y="1.775"/>
+<vertex x="11.5" y="0.65" curve="90"/>
+<vertex x="10.85" y="0"/>
+<vertex x="10.15" y="0"/>
+</polygon>
 </package>
 </packages>
 <symbols>

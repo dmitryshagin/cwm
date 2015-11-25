@@ -14387,7 +14387,7 @@ W = angled&lt;p&gt;
 <part name="U$2" library="vishay_opto" deviceset="VSML3710" device=""/>
 <part name="PT1" library="vishay_opto" deviceset="VEMT3700F" device=""/>
 <part name="S2" library="switch-reed" deviceset="REED-SWITCH-" device="MK15-C2"/>
-<part name="T4" library="zetex" deviceset="NMOSSOT23" device=""/>
+<part name="T4" library="zetex" deviceset="NMOSSOT23" device="" value="BSR202N L6327"/>
 <part name="T5" library="zetex" deviceset="NMOSSOT23" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
